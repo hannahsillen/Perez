@@ -1,0 +1,63 @@
+.voorblad {
+  display: grid;
+  grid-template-rows: 5;
+  grid-template-columns: 5;
+}
+
+.all {
+  display: grid;
+  grid-template-rows: 5;
+  grid-template-columns: 5;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: gray;
+}
+
+@media (min-width: 100px) {
+  .head {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    background-color: lightgrey;
+    color: black;
+  }
+  .midden {
+    grid-column: 1 / 6;
+    grid-row: 2 / 4;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 5px;
+  }
+  .media {
+    grid-column: 1 / 6;
+    grid-row: 4 / 6;
+    padding: 5px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .head {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    background-color: lightgrey;
+    color: black;
+  }
+  .midden {
+    grid-column: 1 / 3;
+    grid-row: 2 / 6;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 5px;
+  }
+  .media {
+    grid-column: 3 / 6;
+    grid-row: 2 / 6;
+    padding: 5px;
+    margin: 10px;
+  }
+}
